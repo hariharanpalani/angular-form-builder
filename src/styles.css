@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 10px;
+}
+
+.form-builder {
+}
+
+.form-builder .customize-tool {
+    border: 1px dotted #ccc;
+    height: 75px;
+}
+
+.fill-builder {
+    height: 50px;
+    border: 1px dotted #CCC;
+    text-align: center;
+}
+
+.drop-section {
+    background-color: cornsilk;
+    text-align: center;
+}
+
+.drop-section label {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.col-align {
+    border: 1px dotted #ccc;
+    padding-right: 10px;
+    margin-top: 10px;
+    height: 55px;
+}
