@@ -33,3 +33,21 @@ body {
     margin-top: 10px;
     height: 55px;
 }
+.parent {
+    border: solid 1px #ccc;
+    height: 250px;
+    width: 250px;
+}
+
+.child {
+    height: 10px;
+    background: red;
+    position: relative;
+    animation: scanner 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scanner {
+    from {top: 0px;}
+    to {top: 250px;}
+}

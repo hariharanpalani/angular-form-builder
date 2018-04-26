@@ -25,3 +25,44 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
 });
+
+/*
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <p-panel >
+        <p-header>
+            Layout
+        </p-header>
+        <div class="btn btn-block btn-info" pDraggable="row">
+          Row
+        </div>
+        <div class="btn btn-block btn-info" pDraggable="col">
+            Column
+        </div>         
+      </p-panel>
+      <br/>
+      <p-panel >
+        <p-header>
+            Components
+        </p-header>
+        <div class="btn btn-block btn-info" pDraggable="ctrl">
+            Text Field
+        </div>
+      </p-panel>
+    </div>
+    <div class="col-md-10">
+      <form [formGroup]="form" (ngSubmit)="submit()" class="form-builder">
+            <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form">
+            </formly-form>
+      </form>
+      <div class="row">
+        <div class="col-md-12 fill-builder drop-section" pDroppable="row" (onDrop)="onDrop($event, 'row')">
+          <label>drop & drop row here</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>*/

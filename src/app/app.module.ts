@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {FormlyModule} from '@ngx-formly/core';
@@ -13,6 +13,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
 import { FormBuilderService } from './form-builder.service';
 import { FormlyRowColumnType } from './types/row-column-type';
+import { ScannerDirective } from './scanner-directive';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,14 @@ import { FormlyRowColumnType } from './types/row-column-type';
     FormBuilderComponent,
     FormlyRowWrapper,
     FormlyCheckBox,
-    FormlyRowColumnType
+    FormlyRowColumnType,
+    ScannerDirective
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     CommonModule,
     CheckboxModule,
     DragDropModule,
